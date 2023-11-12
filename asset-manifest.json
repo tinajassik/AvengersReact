@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da128aac.css",
+    "main.js": "/static/js/main.698cd3bd.js",
+    "static/js/787.8c878e41.chunk.js": "/static/js/787.8c878e41.chunk.js",
+    "static/media/Avengeance-E1zj.otf": "/static/media/Avengeance-E1zj.f5e395dc975875d9c8ab.otf",
+    "static/media/MarvelRegular-Dj83.ttf": "/static/media/MarvelRegular-Dj83.329acb512a429ca2049d.ttf",
+    "index.html": "/index.html",
+    "main.da128aac.css.map": "/static/css/main.da128aac.css.map",
+    "main.698cd3bd.js.map": "/static/js/main.698cd3bd.js.map",
+    "787.8c878e41.chunk.js.map": "/static/js/787.8c878e41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da128aac.css",
+    "static/js/main.698cd3bd.js"
+  ]
+}
