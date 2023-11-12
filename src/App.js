@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import AvengerGallery from "./components/AvengerGallery";
+import AvengerDetails from "./components/AvengerDetails";
+// import DetailsView from './routes/DetailsView';
+// import MainView from './routes/MainView';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1 className="mainTitle">Marvel universe</h1>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<AvengerGallery/>}>
+          </Route>
+          <Route path="/details/:avengerId" element={<AvengerDetails/>}></Route>
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
-
-export default App;
