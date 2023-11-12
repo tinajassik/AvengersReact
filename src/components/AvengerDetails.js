@@ -22,11 +22,17 @@ export default function AvengerDetails() {
     fetchData();
   }, [avengerId]);
 
+
+   
+
   // Conditionally render content based on avengerDetails
   if (!avengerDetails) {
     return <p>Loading...</p>;
   }
 
+  // Secure the URL
+  const originalUrl = avengerDetails.urls[0]?.url;
+  const secureUrl = originalUrl?.replace(/^http:\/\//i, 'https://');
   return (
     <>
       <div className="avengerDetails">
@@ -60,7 +66,7 @@ export default function AvengerDetails() {
         {/* // embedding a marvel website for comics where the character appears 
         // however, some urls from the API are outdated so it does not always work  */}
         <iframe
-          src={avengerDetails.urls[0].url}
+          src={secureUrl}
           title="Embedded Marvel Website for a given character"
           width="800"
           height="600"
